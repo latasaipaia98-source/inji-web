@@ -13,12 +13,12 @@
   },
   "HomePage": {
     "Banner": {
-      "heading": "Effortlessly Access and Manage Your Digital Credentials",
-      "description": "Make your data portable with trust. Securely manage your digital documents with our easy-to-use web-based wallet.",
+      "heading": "Access and Manage Your Tonga Digital Credentials",
+      "description": "Securely access, manage and share trusted digital documents issued in Tonga.",
       "buttontext": "Get Started"
-    },
+  },
     "Features": {
-      "heading": "Features of Inji Wallet",
+      "heading": "Features of Tonga Digital Wallet",
       "description1": "Seamless and secure management of verifiable credentials",
       "description2": "for trusted digital interactions."
     },
