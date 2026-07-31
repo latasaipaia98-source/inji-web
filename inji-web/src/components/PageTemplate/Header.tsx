@@ -51,13 +51,14 @@ export const Header: React.FC<HeaderProps> = ({headerRef}) => {
                         tabIndex={0}
                         onMouseDown={() => navigate(ROUTES.ROOT)}
                         onKeyUp={() => navigate(ROUTES.ROOT)}
+                        className="h-16 w-64 overflow-hidden flex items-center"
                     >
                         <img
-                            src={require('../../assets/InjiWebLogo.png')}
-                            className={`h-6 w-36 flex-shrink-0 sm:h-8 sm:w-48 cursor-pointer
+                            src={require('../../assets/TongaLogo.png')}
+                            className={`h-32 w-auto max-w-none object-contain cursor-pointer -ml-15
                                 ${isRTL(language) ? 'mr-4' : ''}`}
-                            data-testid="Header-InjiWeb-Logo"
-                            alt="Inji Web Logo"
+                            data-testid="Header-Tonga-Logo"
+                            alt="Tonga Digital Wallet Logo"
                         />
                     </div>
                 </div>
