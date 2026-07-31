@@ -61,6 +61,7 @@ services:
       - ./config/mimoto-default.properties:/home/mosip/mimoto-default.properties
       - ./config/mimoto-bootstrap.properties:/home/mosip/mimoto-bootstrap.properties
       - ./certs/oidckeystore.p12:/home/mosip/certs/oidckeystore.p12
+      - ./config/mimoto-issuers-config.json:/home/mosip/mimoto-issuers-config.json
     depends_on:
       - datashare
       - postgres
@@ -69,11 +70,12 @@ services:
     container_name: 'inji-web'
     image: 'injistack/inji-web:0.17.0'
     ports:
-      - '3005:3004'
+      - '3006:3004'
     environment:
       - DEFAULT_LANG=en
       - MIMOTO_URL=http://localhost:3004/v1/mimoto
       - IGNORED_ISSUER_IDS=MockMdl
+
     volumes:
       - ./config/mimoto-issuers-config.json:/home/mosip/mimoto-issuers-config.json
       - ./config/mimoto-trusted-verifiers.json:/home/mosip/mimoto-trusted-verifiers.json
